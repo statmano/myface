@@ -84,7 +84,19 @@ h1 {
 
 #interests--heading {
   text-align: center;
-   color: white;   
+  background: linear-gradient(45deg, hsla(134, 100%, 68%, 1) 0%, hsla(113, 99%, 63%, 1) 18%, hsla(113, 100%, 88%, 1) 46%, hsla(24, 89%, 70%, 1) 69%, hsla(27, 100%, 50%, 1) 100%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}   
 }
 
 
