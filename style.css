@@ -1,0 +1,194 @@
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://cdn.glitch.com/a1622b59-92b6-4d46-92b5-22b4d9726eeb%2Fislanders-yes.jpeg?v=1614180566048");
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: "Rubik", serif;
+}
+
+h1 {
+  font-family: "Shadows Into Light", cursive;
+  color: Orange;
+}
+
+#container {
+  margin: auto;
+  padding: 10px 10px;
+  max-width: 1080px;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(12, auto);
+}
+
+#profile {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 4px;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: 1fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  padding: 10px;
+  color: orange;
+}
+
+#profile--name {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+#img--profile {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#personal {
+  border: 1px solid powderblue;
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  padding: 10px;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 10px;
+  overflow-y: scroll;
+  max-height: 600px;
+}
+
+#interests {
+  display: grid;
+  grid-column-gap: 1px;
+  grid-row-gap: 3px;
+  grid-template-columns: 1fr;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  padding: 5px;
+  background: rgb(31, 69, 252);
+}
+
+#interests--heading {
+  text-align: center;
+   color: white;   
+}
+
+
+#interests div {
+  height: 10px;
+}
+
+#friends {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  padding: 5px;
+}
+
+#friends img {
+  height: 100px;
+  width: 100px;
+}
+
+#friends a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.friends--img {
+  text-align: center;
+}
+
+.friends--name {
+  text-align: center;
+  padding: 3px;
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 125px;
+  margin: auto;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  padding: 5px;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 5px;
+  border: solid 2px rgb(31, 69, 252);
+}
+
+#contact > div {
+  margin: auto;
+}
+
+#contact--where-to-find {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+h2, summary {
+  font-size: 2em;
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+summary {
+  color: white;
+  /* Fallback: Set a background color. */
+  background-color: orange;
+  
+  /* Create the gradient. */
+  background: linear-gradient(45deg, hsla(134, 100%, 68%, 1) 0%, hsla(113, 99%, 63%, 1) 18%, hsla(113, 100%, 88%, 1) 46%, hsla(24, 89%, 70%, 1) 69%, hsla(27, 100%, 50%, 1) 100%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+
+details {
+  color: orange;
+  padding: 5px;
+  display: inline;
+}

@@ -1,0 +1,191 @@
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://cdn.glitch.com/a1622b59-92b6-4d46-92b5-22b4d9726eeb%2Fislanders-yes.jpeg?v=1614180566048");
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: 'Rubik', serif;
+}
+
+h1 {
+  font-family: "Shadows Into Light", cursive;
+  color: Orange;
+  font-size: 2.5em;
+}
+
+#container {
+  margin: auto;
+  padding: 5px 8px;
+  max-width: 97vw;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-template-columns: 2fr 1fr;
+}
+
+#profile {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 4px;
+  grid-template-columns: 1fr 3fr;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 5px;
+  color: orange;
+}
+
+#profile--name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#img--profile {
+  height: 130px;
+  width: 130px;
+  border-radius: 5px;
+  object-fit: cover;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#personal {
+  border: 1px solid powderblue;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 10px;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 10px;
+  overflow-y: scroll;
+  max-height: 600px;
+}
+
+#interests {
+  display: grid;
+  grid-column-gap: 1px;
+  grid-row-gap: 3px;
+  grid-template-columns: 1fr;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 5px;
+  background: rgb(31, 69, 252);
+}
+
+#interests--heading {
+  text-align: center;
+    /* Fallback: Set a background color. */
+  background-color: orange;
+  
+  /* Create the gradient. */
+  background: linear-gradient(45deg, hsla(134, 100%, 68%, 1) 0%, hsla(113, 99%, 63%, 1) 18%, hsla(113, 100%, 88%, 1) 46%, hsla(24, 89%, 70%, 1) 69%, hsla(27, 100%, 50%, 1) 100%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.interests--items {
+  background: rgb(255, 255, 255, 0.5);
+  padding: 5px;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#friends {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 5px;
+}
+
+#friends img {
+  height: 100px;
+  width: 100px;
+}
+
+#friends a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.friends--img {
+  text-align: center;
+}
+
+.friends--name {
+  text-align: center;
+  padding: 3px;
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 125px;
+  margin: auto;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 2px 5px 15px 5px;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 5px;
+  border: solid 2px rgb(31, 69, 252);
+}
+
+#contact > div {
+  margin: auto;
+  text-align: center;
+  
+}
+
+#contact--where-to-find {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+h2, summary {
+  font-size: 2em;
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+summary {
+  color: blue;
+}
+
+details {
+  background: rgb(255, 255, 255, 0.5);
+  padding: 5px;
+  border: 2px solid rgb(255, 128, 64, 0.5);
+  border-radius: 10px;
+  display: inline;
+}
+
