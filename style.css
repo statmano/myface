@@ -8,6 +8,12 @@
 }
 
 body {
+  --base-color: #002f7a;
+  --surface-color: oklch(from var(--base-color) calc(l * 1.2) c h);
+  --brand-color: orange;
+
+
+
   background-image: url("https://cdn.glitch.com/a1622b59-92b6-4d46-92b5-22b4d9726eeb%2Fislanders-yes.jpeg?v=1614180566048");
   overflow: hidden;
   overflow-y: scroll;
@@ -16,7 +22,7 @@ body {
 
 h1 {
   font-family: "Shadows Into Light", cursive;
-  color: Orange;
+  color: var(--brand-color);
 }
 
 #container {
