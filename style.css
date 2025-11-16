@@ -30,8 +30,8 @@ h1 {
   padding: 10px 10px;
   max-width: 1080px;
   display: grid;
-  grid-column-gap: 5px;
-  grid-row-gap: 10px;
+  column-gap: 5px;
+  row-gap: 5px;
   grid-template-columns: repeat(12, auto);
   grid-template-rows: repeat(12, auto);
 }
@@ -45,7 +45,7 @@ h1 {
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 5;
   padding: 10px;
   color: orange;
 }
@@ -58,7 +58,7 @@ h1 {
 #img--profile {
   height: 200px;
   width: 200px;
-  border-radius: 5px;
+  border-radius: 15px;
   object-fit: cover;
 }
 
@@ -70,7 +70,7 @@ h1 {
   grid-row-end: 8;
   padding: 10px;
   background: rgb(255, 255, 255, 0.7);
-  border-radius: 10px;
+  border-radius: 15px;
   overflow-y: scroll;
   max-height: 600px;
 }
@@ -82,10 +82,11 @@ h1 {
   grid-template-columns: 1fr;
   grid-column-start: 1;
   grid-column-end: 7;
-  grid-row-start: 4;
-  grid-row-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 6;
   padding: 5px;
   background: rgb(31, 69, 252);
+  border-radius: 15px;
 }
 
 #interests--heading {
@@ -134,6 +135,11 @@ h1 {
 
 .friends--img {
   text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.friends--img:hover {
+  transform: scale(1.1);
 }
 
 .friends--name {
