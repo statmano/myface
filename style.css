@@ -139,6 +139,7 @@ h1 {
 #friends img {
   height: 100px;
   width: 100px;
+  object-fit: cover;
 }
 
 #friends a {
