@@ -8,7 +8,24 @@
 }
 
 body {
-  background-image: url("https://cdn.glitch.com/a1622b59-92b6-4d46-92b5-22b4d9726eeb%2Fislanders-yes.jpeg?v=1614180566048");
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(2, 2, 2, 0.08) 0px,
+      rgba(2, 2, 2, 0.08) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(2, 2, 2, 0.08) 0px,
+      rgba(2, 2, 2, 0.08) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    linear-gradient(135deg, rgb(6, 6, 6), rgb(81, 81, 81));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
   overflow-y: scroll;
   font-family: 'Rubik', serif;
