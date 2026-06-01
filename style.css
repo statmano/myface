@@ -134,6 +134,7 @@ h1 {
   grid-row-start: 8;
   grid-row-end: 9;
   padding: 5px;
+  gap: 10px;
 }
 
 #friends img {
