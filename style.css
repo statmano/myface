@@ -97,33 +97,26 @@ h1 {
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-end: 9;
+  height: fit-content;
+  align-self: start;
   padding: 5px;
   background: rgb(31, 69, 252);
   border-radius: 15px;
+  overflow: visible;
+  color: rgb(202, 202, 202);
 }
 
 #interests--heading {
   text-align: center;
   background: linear-gradient(45deg, hsla(134, 100%, 68%, 1) 0%, hsla(113, 99%, 63%, 1) 18%, hsla(113, 100%, 88%, 1) 46%, hsla(24, 89%, 70%, 1) 69%, hsla(27, 100%, 50%, 1) 100%);
-  
-  /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }   
-}
-
-
-#interests div {
-  height: 10px;
-}
 
 #friends {
   display: grid;
