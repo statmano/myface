@@ -92,6 +92,7 @@ h1 {
   grid-column-end: 3;
   padding: 5px;
   background: rgb(31, 69, 252);
+  color: rgb(202, 202, 202);
 }
 
 #interests--heading {
@@ -197,7 +198,7 @@ h2, summary {
 }
 
 summary {
-  color: blue;
+  color: rgb(89, 255, 67);
 }
 
 details {
