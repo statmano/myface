@@ -37,6 +37,8 @@ body {
 h1 {
   font-family: "Shadows Into Light", cursive;
   color: var(--brand-color);
+  margin: 0px 0px 0px;
+  font-size: 2.5em;
 }
 
 #container {
